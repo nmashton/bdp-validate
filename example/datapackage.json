@@ -1,0 +1,81 @@
+{
+	"datapackage_version": "1.0-beta.7",
+
+	"name": "armenia-example",
+	"title": "Example data: Armenia BOOST, approved",
+	"description": "The subset of the Armenia BOOST dataset with 'approved' status, transformed into an example of a well-formed budget data package.",
+	"version": "0.0.1",
+
+
+	"licenses": [
+		{
+			"type": "odc-pddl",
+			"url": "http://opendatacommons.org/licenses/pddl/"
+		}
+	],
+
+	"sources": [
+		{
+			"name": "World Bank BOOST",
+			"web": "http://wbi.worldbank.org/boost/",
+			"email": "mmastruzzi@worldbank.org"
+		}
+	],
+
+	"resources": [
+		{
+			"path": "./armenia-example.csv",
+			"name": "armenia-example",
+
+			"currency": "AMD",
+			"dateLastUpdated": "2013-12-17",
+			"datePublished": "2012-02-13",
+			"fiscalYear": "2012",
+			"granularity": "aggregated",
+			"standard": "prerelease-MayDay",
+			"status": "approved",
+			"type": "expenditure",
+
+			"schema": {
+				"primaryKey": "id",
+				"fields": [
+					{
+						"name": "id",
+						"type": "int",
+						"description": "Globally unique identifier for the budget item."
+					},
+					{
+						"name": "admin",
+						"type": "string",
+						"description": "The name of the government entity responsible for spending the budgeted amount."
+					},
+					{
+						"name": "cofog",
+						"type": "string",
+						"description": "The COFOG functional classification for the budget item."
+					},
+					{
+						"name": "gfsmExpense",
+						"type": "string",
+						"description": "The GFSM 2001 economic classification for the budget item."
+					},
+					{
+						"name": "programID",
+						"type": "string",
+						"description": "Code of the government program underwriting the budget item."
+					},
+					{
+						"name": "type",
+						"type": "string",
+						"description": "Budgetary classification of item."
+					},
+					{
+						"name": "amount",
+						"type": "int",
+						"description": "The amount of money associated with this budget item."
+					}
+				]
+			}
+		}
+	]
+}
