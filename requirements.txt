@@ -1,0 +1,5 @@
+csvvalidator==1.2
+datapackage==0.3.0
+jsonschema==2.3.0
+voluptuous==0.8.5
+wsgiref==0.1.2
